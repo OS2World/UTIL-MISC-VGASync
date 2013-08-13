@@ -1,0 +1,15 @@
+NAME VGASYNC WINDOWCOMPAT
+
+DESCRIPTION 'Ping VGA syncs to negative polarity'
+
+
+
+SEGMENTS
+   IOSEG IOPL
+
+
+STACKSIZE 4096
+
+PROTMODE
+
+

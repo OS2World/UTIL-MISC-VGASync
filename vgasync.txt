@@ -1,0 +1,21 @@
+ NAME
+    vgasync - Keep VGA sync polarities negative
+
+ SYNOPSIS
+    detach vgasync
+
+ DESCRIPTION
+    'vgasync' runs as a background process under OS/2 and periodically
+ (re)sets the horizontal and vertical sync polarities of an (S)VGA card to
+ negative sync.
+
+    Many (all?) SVGA cards change the polarities of the H and V sync
+ signals to indicate to an assumed multisync monitor the current video mode
+ (and implied scan frequencies). 'vgasync' allows older fixed-frequency
+ monitors that require a fixed sync polarity to be used with such SVGA
+ cards without requiring hardware modification of the sync signals.  With
+ the addition of manual sync controls on the monitor and/or a means (eg.
+ software drivers) of tweaking the VGA CRT control registers, a "fixed
+ frequency" monitor can then display most of the SVGA extended video modes.
+
+    This program requires IOPL to run.
